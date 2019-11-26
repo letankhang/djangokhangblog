@@ -1,0 +1,1 @@
+web: gunicorn khang_blog.wsgi
