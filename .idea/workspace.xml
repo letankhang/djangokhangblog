@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da15bb7f-bb4d-44d9-ae9e-cf9fe18a3d11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/khang_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khang_blog/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="da15bb7f-bb4d-44d9-ae9e-cf9fe18a3d11" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

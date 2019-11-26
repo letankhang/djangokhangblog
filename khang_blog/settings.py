@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECRET_KEY = 'w7aflm3yseo*zz0#1ltn+hp*v+z&bzpng#=ej!r=k**n4=o%_w'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == "True")
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['djangokhangblog.herokuapp.com']
