@@ -18,13 +18,13 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         from datetime import datetime
-
         slugify_string = slugify(self.title)
         time = datetime.now()
         time = "".join(str(time).split(".", ))
 
         self.slug = slugify_string + time[17:]
         super(Post, self).save(*args, **kwargs)
+
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'slug': self.slug})
