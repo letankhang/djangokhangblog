@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da15bb7f-bb4d-44d9-ae9e-cf9fe18a3d11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/khang_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/khang_blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khang_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/khang_blog/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
