@@ -27,7 +27,7 @@ class PostUpdateAPIView(RetrieveUpdateAPIView):
 class PostDeteleAPIView(RetrieveDestroyAPIView):
     queryset = Post.objects.all().order_by('-date_posted')
     serializer_class = PostDetailSerializers
-    # lookup_field = 'slug'
+    lookup_field = 'slug'
 
 class PostCreateAPIView(CreateAPIView):
     queryset = Post.objects.all().order_by('-date_posted')
