@@ -3,7 +3,7 @@ from django.contrib.auth.admin import User
 from django.utils import timezone
 from django.utils.text import slugify
 from django.urls import reverse
-
+import uuid
 
 
 class Post(models.Model):
@@ -17,15 +17,16 @@ class Post(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        from datetime import datetime
-        slugify_string = slugify(self.title)
-        time = datetime.now()
-        time = "".join(str(time).split(".", ))
-
-        self.slug = slugify_string + time[17:]
+        self.slug = create_slug(self.title)
         super(Post, self).save(*args, **kwargs)
 
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'slug': self.slug})
 
+
+def create_slug(selftitle):
+    from datetime import datetime
+    time = str(datetime.now())
+    time = "".join(time.split("."))
+    return slugify(str(time[17:]) + str(selftitle))
