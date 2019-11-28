@@ -34,11 +34,17 @@ class UserPostListView(ListView):
 class SearchResultsView(ListView):
     model = Post
     template_name = 'blog/search_results.html'
+    # paginate_by = 5
+    # ordering = ['-date_posted']
 
     def get_queryset(self):
         query = self.request.GET.get('q')
         object_list = Post.objects.filter(
-            Q(title__icontains=query) | Q(content__icontains=query)
+            Q(title__icontains=query) |
+            Q(author__username__icontains=query) |
+            Q(content__icontains=query) |
+            Q(date_posted__icontains=query) |
+            Q(slug__icontains=query)
         )
         return object_list
 class PostDetailView(DetailView):
