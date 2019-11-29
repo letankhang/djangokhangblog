@@ -20,10 +20,8 @@ class Post(models.Model):
         self.slug = create_slug(self.title)
         super(Post, self).save(*args, **kwargs)
 
-
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'slug': self.slug})
-
 
 def create_slug(selftitle):
     from datetime import datetime
