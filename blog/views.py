@@ -34,8 +34,8 @@ class UserPostListView(ListView):
 class SearchResultsView(ListView):
     model = Post
     template_name = 'blog/search_results.html'
-    # paginate_by = 5
-    # ordering = ['-date_posted']
+    paginate_by = 5
+    ordering = ['-date_posted']
 
     def get_queryset(self):
         query = self.request.GET.get('q')
@@ -47,6 +47,8 @@ class SearchResultsView(ListView):
             Q(slug__icontains=query)
         )
         return object_list
+
+
 class PostDetailView(DetailView):
     model = Post
 

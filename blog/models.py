@@ -23,6 +23,12 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'slug': self.slug})
 
+    # def get_url_value_search(self):
+    #     return 'This is test test test'
+        # full_path = self.request.get_full_path
+        # value_search = full_path.split('q=')
+        # return  value_search[1]
+
 def create_slug(selftitle):
     from datetime import datetime
     time = str(datetime.now())
