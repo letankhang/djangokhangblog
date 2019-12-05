@@ -1,4 +1,131 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1>Learn Blog Django</h1>
+<body id="top">
+<div id="cv" class="instaFade">
+    <div class="mainDetails">
+        <div id="headshot" class="quickFade">
+            <img src="../../media/khang.jpg" alt="Khang's picture"/>
+        </div>
+
+        <div id="name">
+            <h1 class="quickFade delayTwo">Khang Django Blog</h1>
+            <h2 class="quickFade delayThree">Python/Django Developer</h2>
+        </div>
+
+        <div id="contactDetails" class="quickFade delayFour">
+            <ul>
+                <li>Email: <a href="mailto:khangcn12@gmail.com" target="_blank">khangcn12@gmail.com</a></li>
+                <li>Web: <a href="https://djangokhangblog.herokuapp.com/" target="_blank">https://djangokhangblog.herokuapp.com/</a></li>
+                <li>Phone: +84372054479</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="mainArea" class="quickFade delayFive">
+        <section>
+            <article>
+                <div class="sectionTitle">
+                    <h1>THÔNG TIN CÁ NHÂN</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <p>Họ Tên: Lê Tấn Khang <br></p>
+                    <p>Năm sinh: 15/06/1994 <br></p>
+                    <p>Địa chỉ: TP Hồ Chí Minh <br></p>
+                    <p>Mục tiêu nghề nghiệp: Trờ thành backend developer: Python/Django sau đó tiến tới
+                        trờ thành fullstack developer(xu hướng)<br></p>
+                </div>
+            </article>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Kinh nghiệm làm việc</h1>
+            </div>
+
+            <div class="sectionContent">
+                <article>
+                    <h2>TBS GROUP</h2>
+                    <p class="subDetails">1/2018 - 9/2019</p>
+                    <p>Nhân viên xử lí dữ liệu kho 5 TBS (ScanTeam): Kho quản lí dữ liệu bằng mã vạch
+                        nên có nhân viên Tallyman scan dữ liệu về , Scanteam kiểm tra dữ liệu trùng khớp với dữ liệu
+                        nhà máy gửi (nhà máy có đội ngũ gửi dữ liệu cho scanteam qua mail) , nếu không trùng dữ liệu thì
+                        kiểm tra nguyên nhân sai ở đâu để xử lí (nhà máy gửi nhầm hàng, mã vạch bị sai, nhân viên scan
+                        nhầm hàng, dữ liệu nhà máy gửi sai ,....)
+                    </p>
+                </article>
+                <article>
+                    <h2>TỰ HỌC PYTHON</h2>
+                    <p class="subDetails">6/2019 - HIỆN TẠI</p>
+                    <p>Tôi tự tìm tài liệu và học , đã đọc cuốn sách
+                        <a href="http://openbookproject.net/thinkcs/python/english3e/" target="_blank">
+                            How to Think Like a Computer Scientist
+                        </a>
+                        và tìm hiểu các video trên mạng để tự học.<br>
+                    </p>
+                    <p>
+                        Chưa có kinh nghiệp thực tế nên tôi làm project này để giới thiệu bản thân.
+                        Trang web này có chức năng của một blog cơ bản: tạo mới user, chỉnh sửa thông tin cá nhân,
+                        thêm xóa sửa bài viết(tất nhiên là có phân quyền), search bài viết, phân trang ..
+                        Bạn có thể xem qua API ở đây
+                        <a href="https://djangokhangblog.herokuapp.com/api" target="_blank">API</a>
+                        Bạn không thể update hay sửa xóa trừ khi bạn là chủ nhân của bài viết. bạn có thể
+                        <a href="https://djangokhangblog.herokuapp.com/register/" target="_blank">đăng kí </a>
+                        và <a href="https://djangokhangblog.herokuapp.com/post/create/" target="_blank">tạo post</a>
+                        để test web và api
+                    </p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Kĩ năng</h1>
+            </div>
+
+            <div class="sectionContent">
+                <ul class="keySkills">
+                    <li>PYTHON</li>
+                    <li>DJANGO</li>
+                    <li></li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>PHOTOSHOP</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Giáo dục</h1>
+            </div>
+
+            <div class="sectionContent">
+                <article>
+                    <h2>TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ MINH</h2>
+                    <p class="subDetails">Cử nhân công nghệ thông tin</p>
+                    <p>Tôi đã hoàn thành chương trình đại học ở trường nên có nền tảng lập trình cơ bản.<br></p>
+                    <p>Có tham gia hoạt động mùa hè xanh của trường<br></p>
+                </article>
+                <article>
+                    <h2>TRUNG TÂM ĐÀO TẠO NHẤT NGHÊ</h2>
+                    <p class="subDetails">THIẾT KẾ GIAO DIỆN WEB</p>
+                    <p>Tôi đã hoàn thành chương trình thiết kế giao diện web nên đã có chút hiểu biết về giao diện,màu sắc
+                        , phông chữ,.. và 1 số kĩ thuật của photoshop <br></p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+    </div>
+</div>
+</body>
 {% endblock content %}
