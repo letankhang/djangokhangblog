@@ -1,0 +1,127 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div id="cv" class="instaFade">
+    <div class="mainDetails">
+        <div id="headshot" class="quickFade">
+            <img src="../../media/khang.jpg" alt="Khang's picture"/>
+        </div>
+
+        <div id="name">
+            <h1 class="quickFade delayTwo">Khang Django Blog</h1>
+            <h2 class="quickFade delayThree">Python/Django Developer</h2>
+        </div>
+
+        <div id="contactDetails" class="quickFade delayFour">
+            <ul>
+                <li>Email: <a href="mailto:khangcn12@gmail.com" target="_blank">khangcn12@gmail.com</a></li>
+                <li>Web: <a href="https://djangokhangblog.herokuapp.com/" target="_blank">https://djangokhangblog.herokuapp.com/</a></li>
+                <li>Phone: +84372054479</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="mainArea" class="quickFade delayFive">
+        <section>
+            <article>
+                <div class="sectionTitle">
+                    <h1>Personal Profile</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <p>Name: Lê Tấn Khang <br></p>
+                    <p>BirthDay: 15/06/1994 <br></p>
+                    <p>Location: TP Hồ Chí Minh <br></p>
+                    <p>Career Objective: Become a web developer using Python/Django<br></p>
+                </div>
+            </article>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Work Experience</h1>
+            </div>
+
+            <div class="sectionContent">
+                <article>
+                    <h2>TBS GROUP</h2>
+                    <p class="subDetails">1/2018 - 9/2019</p>
+                    <p>ScanTeam staff: Tallyman scan barcode from carton box , Scanteam reconcile data
+                        (data receive from factory and data from barcode), If data mismatched then
+                        Find out the cause and how to deal with it
+                        (factory sending wrong carton,factory sending wrong barcode,
+                        barcode damage, tallyman scan wrong carton,...)
+                    </p>
+                </article>
+                <article>
+                    <h2>LEARN PYTHON</h2>
+                    <p class="subDetails">6/2019 - Present</p>
+                    <p>I research and learn by myself , reading this book:
+                        <a href="http://openbookproject.net/thinkcs/python/english3e/" target="_blank">
+                            How to Think Like a Computer Scientist
+                        </a>
+                        and learn from video .<br>
+                    </p>
+                    <p>
+                        I don't have experience so I create this project to introduce myself.
+                        This web have basic feature: create user, update profile, adding, update, delete post
+                        (authenticated), search post, paginated ..
+                        You can see API here:
+                        <a href="https://djangokhangblog.herokuapp.com/api" target="_blank">API</a>
+                        You can create a user and see full feature web in here
+                        <a href="https://djangokhangblog.herokuapp.com/register/" target="_blank">create user </a>
+                        and <a href="https://djangokhangblog.herokuapp.com/post/create/" target="_blank">create post</a>
+                        to test web và api
+                    </p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Key Skills</h1>
+            </div>
+
+            <div class="sectionContent">
+                <ul class="keySkills">
+                    <li>PYTHON</li>
+                    <li>DJANGO</li>
+                    <li></li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>PHOTOSHOP</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+
+        <section>
+            <div class="sectionTitle">
+                <h1>Education</h1>
+            </div>
+
+            <div class="sectionContent">
+                <article>
+                    <h2>HO CHI MINH CITY UNIVERSITY OF TRANSPORT</h2>
+                    <p class="subDetails">bachelor's degree</p>
+                    <p>I finish study program so I have basic programming knowledge<br></p>
+                    <p>participate in green summer activities<br></p>
+                </article>
+                <article>
+                    <h2>Nhat Nghe Education JSC</h2>
+                    <p class="subDetails">Web interface design</p>
+                    <p>I have some knowledge about frontend web: color, font, photoshop, html, css.. <br></p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+    </div>
+</div>
+{% endblock content %}
